@@ -14,7 +14,7 @@ soma = 0
 for contador in range(1, 6):
     numero = int(input("Digite o número " + str(contador) + ": "))
 
-    if numero < 0:
+    if numero > 0:
         soma = soma + numero
 
 print("Soma dos positivos:", soma)
