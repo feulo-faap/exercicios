@@ -1,0 +1,26 @@
+# EXERCÍCIO 08 — PLANEJADOR DE ESTUDOS
+#
+# Enunciado:
+# Corrija o programa para que o último dia do plano seja sempre
+# uma "revisão geral".
+#
+# Nos demais dias, deve aparecer:
+# "conteúdo novo e exercícios".
+#
+#
+# Teste manual:
+# Para 4 dias:
+# - dias 1, 2 e 3: conteúdo novo e exercícios
+# - dia 4: revisão geral
+#
+
+dias = int(input("Por quantos dias você vai estudar? "))
+minutos = int(input("Quantos minutos por dia? "))
+
+for dia in range(1, dias + 1):
+    if dia == dias - 1:
+        atividade = "revisão geral"
+    else:
+        atividade = "conteúdo novo e exercícios"
+
+    print("Dia", dia, "-", minutos, "minutos de", atividade)
