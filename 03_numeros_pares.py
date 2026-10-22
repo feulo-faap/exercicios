@@ -14,7 +14,7 @@ limite = int(input("Digite um limite: "))
 quantidade_pares = 0
 
 for numero in range(1, limite + 1):
-    if numero % 2 == 1:
+    if numero % 2 == 0:
         quantidade_pares = quantidade_pares + 1
 
 print("Quantidade de números pares:", quantidade_pares)
