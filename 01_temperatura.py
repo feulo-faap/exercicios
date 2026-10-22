@@ -17,10 +17,9 @@
 
 temperatura = int(input("Digite a temperatura: "))
 
-if temperatura <= 15:
+if temperatura < 15:
     print("Frio")
-else:
-    if temperatura <= 30:
+elif temperatura <= 30:
         print("Ameno")
-    else:
+else:
         print("Quente")
